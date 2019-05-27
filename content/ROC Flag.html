@@ -157,13 +157,13 @@ ctx = canvas.getContext("2d")
 # 以下採用 canvas 原始座標繪圖
 flag_w = canvas.width
 flag_h = canvas.height
-circle_x = flag_w/4
-circle_y = flag_h/4
+circle_x = flag_w/2
+circle_y = flag_h/2
 # 先畫滿地紅
 ctx.fillStyle='rgb(255, 255, 0)'
 ctx.fillRect(0,0,flag_w,flag_h)
 # 再畫青天
-ctx.fillStyle='rgb(127, 255, 0)'
+ctx.fillStyle='rgb(255, 255, 0)'
 ctx.fillRect(0,0,flag_w/2,flag_h/2)
 # 畫十二道光芒白日
 ctx.beginPath()
