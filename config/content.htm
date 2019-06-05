@@ -156,13 +156,12 @@ function draw2mid() {
 </script>
 <p><canvas height="300" id="canvas" width="400"> Your browser doesn't support the HTML5 element canvas. </canvas> <br/> <button onclick="throwdice();">Throw dice </button></p>
 <form id="f" name="f">Stage: <input name="stage" type="text" value="First Throw"/> Point: <input name="pv" type="text" value="   "/> Outcome: <input name="outcome" type="text" value="     "/></form><h3>讚讚讚</h3>
-<p>網路與電腦程式只是工具, 任何人希望與遠端的系統或成員溝通, 可以使用網路.</p>
-<p>任何人想要利用電腦的能力解決問題, 就必須學會編寫電腦程式, 與電腦溝通.</p>
+<p></p>
 <p style="text-align: center;"><img alt="cool" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cool.gif"/><img alt="cry" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cry.gif"/><img alt="embarassed" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-embarassed.gif"/><img alt="foot-in-mouth" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif"/><img alt="frown" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-frown.gif"/><img alt="innocent" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-innocent.gif"/><img alt="kiss" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-kiss.gif"/><img alt="laughing" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-laughing.gif"/><img alt="money-mouth" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-money-mouth.gif"/><img alt="sealed" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-sealed.gif"/><img alt="smile" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-smile.gif"/><img alt="surprised" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-surprised.gif"/><img alt="tongue-out" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-tongue-out.gif"/><img alt="undecided" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-undecided.gif"/><img alt="wink" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-wink.gif"/><img alt="yell" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-yell.gif"/><img alt="cry" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cry.gif"/><img alt="money-mouth" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-money-mouth.gif"/><img alt="frown" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-frown.gif"/><img alt="cool" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cool.gif"/><img alt="embarassed" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-embarassed.gif"/><img alt="tongue-out" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-tongue-out.gif"/></p>
-<p>按一下，即可發大財</p>
+<p><span color="#FF0000" style="color: orange;">按一下，即可發大財</span></p>
 <p><button onclick="myFunction()"><img height="166" src="https://s.yimg.com/ny/api/res/1.2/OFA38X4sK_OTqe9LBSRXYA--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/zh-Hant-TW/homerun/fountmedia_io_269/86d27f43b0f1df1a3f134ddb6f30e843" width="251"/></button></p>
 <p id="demo"></p>
-<p>恭喜獲得以上金額</p>
+<p><span color="#FF0000" style="color: #ff0000;">恭喜獲得以上金額</span></p>
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = Math.floor(Math.random()*1000000000000000+1);
@@ -327,7 +326,9 @@ ctx.fill()
 <script src="/static/chimper/js/main.js"></script><h1>3D圖</h1>
 <script src="/static/three.min.js"></script>
 <p><iframe height="900" src="/static/viewstl.html?src=/downloads/output.stl" width="900"><iframe></iframe></iframe></p>
-<h1>繪圖</h1><h2>Brython繪圖</h2>
+<h1>繪圖</h1>
+<p>1.<a href="/get_page/Brython繪圖">Brython繪圖</a></p>
+<p>2.<a href="/get_page/Canvas 繪圖">Canvas 繪圖</a></p><h2>Brython繪圖</h2>
 <!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -510,7 +511,6 @@ ctx.restore();
 }
 </script>
 <p><button onclick="draw()">繪圖</button> <button onclick="clear_canvas()">清除</button></p><h1>Ball</h1>
-<p><a href="https://github.com/Rafidhasan/moving-ball">https://github.com/Rafidhasan/moving-ball</a></p>
 <script>
 class Ball {
 	constructor(radius, color) {
@@ -828,6 +828,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div><button id="stop-btn">stop</button></div>
 <div>
 <p class="desc" id="desc-one">test 1</p>
+<p class="desc" id="desc-two">test 2</p>
 </div>
 </div>
 </div>
@@ -867,14 +868,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                     </script>
             -->
-<script src="/get_page/cmsimde/static/chimper/js/main.js"></script>
-<h1>ubuntu</h1>
-<p><span color="#FF0000" style="color: #ff0000;">進入虛擬主機，輸入ifconfig查詢IP位址</span></p>
+<script src="/get_page/cmsimde/static/chimper/js/main.js"></script><h1>用Ubuntu開啟網站</h1>
+<p><span color="#FF0000" style="color: #ff0000;">啟動，並輸入ifconfig查詢虛擬主機IP位址</span></p>
 <p><img alt="" height="450" src="/images/1.png" width="502"/></p>
 <p><span color="blue" style="color: blue;">打開<span>FileZilla，把倉儲檔案複製到虛擬主機資料夾</span></span></p>
 <p><span><img alt="" height="386" src="/images/4.png" width="510"/></span></p>
 <p><span color="green" style="color: green;">再修改init.py，把檔案裡的False改True，再傳送覆蓋本地檔案</span></p>
 <p><img caption="false" height="300" src="/images/2.png" width="586"/></p>
-<p><span style="color: orange;">或是直接在虛擬主機內修改，先輸入cd /home/kmol2019/cms，再輸入vi init.py進行編輯，可能會出現E325: ATTENTION，輸入o或enter，即可進入編輯。把Flase改成true，修改好輸入:wq 存檔。</span></p>
+<p><span style="color: orange;">或是直接在虛擬主機內修改，先輸入cd /home/kmol2019/cms，再輸入vi init.py進到編輯頁面，可能會出現E325: ATTENTION，輸入o或enter，按i進行編輯，把Flase改成true，按Esc退出編輯模式，輸入:wq !存檔。</span></p>
 <p><img alt="" height="394" src="/images/6.png" width="440"/></p>
-<p></p>
+<p><span color="#FF0000" style="color: purple;">到瀏覽器輸入網址，有以下三種</span></p>
+<p><span color="#FF0000" style="color: red;">http://虛擬主機IP，即可進到個人靜態網站</span></p>
+<p><span color="#FF0000" style="color: red;"><img alt="" height="350" src="/images/靜.png" width="658"/></span></p>
+<p><span color="#FF0000" style="color: #ff0000;">https://虛擬主機IP，即可進到個人動態網站</span></p>
+<p><span color="#FF0000" style="color: #ff0000;"><img caption="false" height="350" src="/images/動.png" width="659"/></span></p>
+<p><span color="#FF0000" style="color: #ff0000;">https://虛擬主機IP:5443，即可進入Fossil網站</span></p>
+<p><span color="#FF0000" style="color: #ff0000;"><img caption="false" height="350" src="/images/fossil.png" width="659"/></span></p>
